@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+
+    <!-- Login Activity -->
+    <dimen name="logo_top_margin">100dp</dimen>
+
+</resources>

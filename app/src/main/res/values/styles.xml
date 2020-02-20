@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="login" parent="AppTheme">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">44dp</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+</resources>
