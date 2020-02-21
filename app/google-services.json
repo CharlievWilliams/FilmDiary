@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208963385277",
+    "firebase_url": "https://filmdiary-89212.firebaseio.com",
+    "project_id": "filmdiary-89212",
+    "storage_bucket": "filmdiary-89212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208963385277:android:64517e65527fa4740184d4",
+        "android_client_info": {
+          "package_name": "com.charlie.filmdiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208963385277-732f52ovmrts9utfp0m3n3oq68pmv0so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.charlie.filmdiary",
+            "certificate_hash": "f151f699c730618e07a5687a8a694904cc45b47f"
+          }
+        },
+        {
+          "client_id": "208963385277-mssdgncdtmjhi3k22vvs8hq29nujnq0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSb3Np7iLYfdhS7fYfDwDwcrRN19ymBEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208963385277-mssdgncdtmjhi3k22vvs8hq29nujnq0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

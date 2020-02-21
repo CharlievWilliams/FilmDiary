@@ -2,8 +2,6 @@
 <resources>
 
     <!-- General -->
-
-    <!-- Login Activity -->
-    <dimen name="logo_top_margin">100dp</dimen>
+    <dimen name="general">100dp</dimen>
 
 </resources>

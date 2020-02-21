@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FilmDiary</string>
 
-    <!-- Login -->
-    <string name="login_title">Login</string>
+    <!-- General -->
+    <string name="general">General</string>
 
 </resources>

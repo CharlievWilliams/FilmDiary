@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Screen 1"
+        android:id="@+id/screen1"/>
+    <item
+        android:checked="true"
+        android:title="Screen 2"
+        android:id="@+id/screen2"/>
+    <item android:title="Screen 3"
+        android:id="@+id/screen3"/>
+</menu>

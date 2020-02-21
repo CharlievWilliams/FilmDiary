@@ -5,25 +5,38 @@
     style="@style/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".screen1.Screen1Fragment">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
-        style="@style/title"
+        android:id="@+id/heading"
+        style="@style/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/logo_top_margin"
-        android:text="@string/login_title"
+        android:text="Screen 2"
+        app:layout_constraintBottom_toTopOf="@id/subheading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subheading"
+        style="@style/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is screen 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/logo_top_margin"
-        android:text="@string/login_title"
+        android:layout_marginBottom="100dp"
+        android:text="This is a button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
