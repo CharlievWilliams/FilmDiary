@@ -13,9 +13,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class CalendarFragment : Fragment() {
 
-    @BindView(R.id.button)
-    lateinit var button: AppCompatButton
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,9 +27,5 @@ class CalendarFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         requireActivity().toolbar?.title = getString(R.string.calendar_title)
-
-        button.setOnClickListener {
-
-        }
     }
 }

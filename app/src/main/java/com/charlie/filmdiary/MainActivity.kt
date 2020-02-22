@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
         (applicationContext as MyApplication).appComponent.inject(this)
-
+        window.statusBarColor = getColor(R.color.colorSecondary)
+        window.navigationBarColor = getColor(R.color.colorPrimary)
         setupToolbar()
         setupViewNavigationEvents()
     }

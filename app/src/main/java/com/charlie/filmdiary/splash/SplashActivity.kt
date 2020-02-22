@@ -1,8 +1,10 @@
 package com.charlie.filmdiary.splash
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
+import butterknife.BindView
 import butterknife.ButterKnife
 import com.charlie.filmdiary.MainActivity
 import com.charlie.filmdiary.MyApplication
@@ -11,13 +13,16 @@ import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
 
+    @BindView(R.id.motionLayout)
+    lateinit var root: View
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         ButterKnife.bind(this)
         (applicationContext as MyApplication).appComponent.inject(this)
-
         setupAnimation()
+        root.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
     }
 
     private fun setupAnimation() {
@@ -39,6 +44,7 @@ class SplashActivity : AppCompatActivity() {
 
     fun navigateToApp() {
         startActivity(MainActivity.newIntent(this))
+        finish()
     }
 
 

@@ -3,9 +3,11 @@
 
     <item
         android:id="@+id/calendar"
+        android:icon="@drawable/ic_calendar"
         android:title="@string/calendar_title" />
     <item
         android:id="@+id/diary"
+        android:icon="@drawable/ic_diary"
         android:title="@string/diary_title" />
     <item
         android:id="@+id/search"
