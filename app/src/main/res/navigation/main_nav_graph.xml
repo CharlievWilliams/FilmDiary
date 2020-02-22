@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/screen1">
+    app:startDestination="@id/diary">
     <fragment
-        android:id="@+id/screen1"
-        android:name="com.charlie.filmdiary.screen1.Screen1Fragment"
-        android:label="Screen2Fragment"
-        tools:layout="@layout/fragment_screen1" />
+        android:id="@+id/calendar"
+        android:name="com.charlie.filmdiary.calendar.CalendarFragment"
+        android:label="CalendarFragment"
+        tools:layout="@layout/fragment_calendar" />
     <fragment
-        android:id="@+id/screen2"
-        android:name="com.charlie.filmdiary.screen2.Screen2Fragment"
-        tools:layout="@layout/fragment_screen2"
-        android:label="Screen2Fragment" />
+        android:id="@+id/diary"
+        android:name="com.charlie.filmdiary.diary.DiaryFragment"
+        android:label="DiaryFragment"
+        tools:layout="@layout/fragment_diary" />
     <fragment
-        android:id="@+id/screen3"
-        android:name="com.charlie.filmdiary.screen3.Screen3Fragment"
-        tools:layout="@layout/fragment_screen3"
-        android:label="Screen3Fragment" />
+        android:id="@+id/search"
+        android:name="com.charlie.filmdiary.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
 </navigation>

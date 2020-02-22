@@ -2,6 +2,8 @@
     <string name="app_name">FilmDiary</string>
 
     <!-- General -->
-    <string name="general">General</string>
+    <string name="calendar_title">Calendar</string>
+    <string name="diary_title">Diary</string>
+    <string name="search_title">Search</string>
 
 </resources>

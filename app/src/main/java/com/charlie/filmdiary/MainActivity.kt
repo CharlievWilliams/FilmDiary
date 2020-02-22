@@ -1,5 +1,7 @@
 package com.charlie.filmdiary
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
@@ -8,6 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupToolbar() {
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Hello"
+        supportActionBar?.title = getString(R.string.diary_title)
     }
 
     private fun setupViewNavigationEvents() {
@@ -42,5 +45,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    companion object {
+        fun newIntent(context: Context): Intent? {
+            return Intent(context, MainActivity::class.java)
+        }
+    }
 
 }

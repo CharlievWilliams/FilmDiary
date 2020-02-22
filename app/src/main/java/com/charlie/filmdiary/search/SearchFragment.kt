@@ -1,4 +1,4 @@
-package com.charlie.filmdiary.screen3
+package com.charlie.filmdiary.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,8 +9,9 @@ import androidx.fragment.app.Fragment
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.charlie.filmdiary.R
+import kotlinx.android.synthetic.main.activity_main.*
 
-class Screen3Fragment : Fragment() {
+class SearchFragment : Fragment() {
 
     @BindView(R.id.button)
     lateinit var button: AppCompatButton
@@ -20,13 +21,15 @@ class Screen3Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_screen3, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_search, container, false)
         ButterKnife.bind(this, view)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        requireActivity().toolbar?.title = getString(R.string.search_title)
 
         button.setOnClickListener {
             // Do something
