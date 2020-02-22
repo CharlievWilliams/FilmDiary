@@ -1,4 +1,4 @@
-package com.charlie.filmdiary.screen1
+package com.charlie.filmdiary.screen3
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import com.charlie.filmdiary.R
 
-class Screen1Fragment : Fragment() {
+class Screen3Fragment : Fragment() {
 
     @BindView(R.id.button)
     lateinit var button: AppCompatButton
@@ -20,7 +20,7 @@ class Screen1Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_screen1, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_screen3, container, false)
         ButterKnife.bind(this, view)
         return view
     }
@@ -29,7 +29,8 @@ class Screen1Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button.setOnClickListener {
-
+            // Do something
         }
     }
+
 }

@@ -1,5 +1,5 @@
 package com.charlie.filmdiary.screen2
 
-data class Screen1ViewState(
+data class Screen2ViewState(
     val isLoggedIn: Boolean
 )

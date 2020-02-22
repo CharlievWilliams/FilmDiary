@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/screen1Fragment">
+    app:startDestination="@id/screen1">
     <fragment
-        android:id="@+id/screen1Fragment"
+        android:id="@+id/screen1"
         android:name="com.charlie.filmdiary.screen1.Screen1Fragment"
         android:label="Screen2Fragment"
-        tools:layout="@layout/fragment_screen1">
-        <action
-            android:id="@+id/action_screen1Fragment_to_screen2Fragment"
-            app:destination="@id/screen2Fragment" />
-    </fragment>
+        tools:layout="@layout/fragment_screen1" />
     <fragment
-        android:id="@+id/screen2Fragment"
+        android:id="@+id/screen2"
         android:name="com.charlie.filmdiary.screen2.Screen2Fragment"
         tools:layout="@layout/fragment_screen2"
-        android:label="Screen2Fragment" >
-        <action
-            android:id="@+id/action_screen2Fragment_to_screen1Fragment"
-            app:destination="@id/screen1Fragment" />
-    </fragment>
+        android:label="Screen2Fragment" />
+    <fragment
+        android:id="@+id/screen3"
+        android:name="com.charlie.filmdiary.screen3.Screen3Fragment"
+        tools:layout="@layout/fragment_screen3"
+        android:label="Screen3Fragment" />
 </navigation>
