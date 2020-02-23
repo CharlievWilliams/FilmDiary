@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Specific colour for dark mode -->
+    <color name="splash_logo">@color/black</color>
+    <color name="bottom_nav_unselected">@color/white</color>
+    <color name="bottom_nav_selected">@color/dark_green</color>
+
+</resources>

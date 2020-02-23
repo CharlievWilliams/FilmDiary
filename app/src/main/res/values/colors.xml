@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ffffff</color>
-    <color name="colorPrimaryDark">#85cf72</color>
-    <color name="colorPrimaryDarkAlternate">#0a9c98</color>
-    <color name="colorPrimaryLight">#7FB3D5</color>
-    <color name="colorSecondary">#f0f0f0</color>
-    <color name="colorAccent">#F4D03F</color>
+
+    <!-- Light Theme -->
+    <color name="white">#ffffff</color>
+    <color name="grey">#f0f0f0</color>
+
+    <!-- Dark Theme -->
+    <color name="almost_black">#0f0f0f</color>
+    <color name="black">#000000</color>
+
+    <!-- Brand colours -->
+    <color name="light_green">#85cf72</color>
+    <color name="dark_green">#0a9c98</color>
+
+    <!-- Specific colour for dark mode -->
+    <color name="splash_logo">@color/white</color>
+    <color name="bottom_nav_unselected">@color/black</color>
+    <color name="bottom_nav_selected">@color/dark_green</color>
+
 </resources>

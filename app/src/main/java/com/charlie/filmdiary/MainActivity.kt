@@ -11,7 +11,6 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class MainActivity : AppCompatActivity() {
 
     @BindView(R.id.toolbar)
@@ -25,8 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
         (applicationContext as MyApplication).appComponent.inject(this)
-        window.statusBarColor = getColor(R.color.colorSecondary)
-        window.navigationBarColor = getColor(R.color.colorPrimary)
+
         setupToolbar()
         setupViewNavigationEvents()
     }

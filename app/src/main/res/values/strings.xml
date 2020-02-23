@@ -5,5 +5,7 @@
     <string name="calendar_title">Calendar</string>
     <string name="diary_title">Diary</string>
     <string name="search_title">Search</string>
+    <string name="search_box_label">Search</string>
+    <string name="search_box_hint">Find Films</string>
 
 </resources>
