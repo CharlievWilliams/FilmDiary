@@ -8,4 +8,7 @@
     <string name="search_box_label">Search</string>
     <string name="search_box_hint">Find Films</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -8,14 +8,13 @@ import androidx.fragment.app.Fragment
 import butterknife.ButterKnife
 import com.charlie.filmdiary.R
 
-class DiaryFragment : Fragment() {
-
+class DiaryHubFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_diary, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_diary_hub, container, false)
         ButterKnife.bind(this, view)
         return view
     }
