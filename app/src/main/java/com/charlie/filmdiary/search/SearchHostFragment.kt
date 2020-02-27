@@ -1,15 +1,17 @@
-package com.charlie.filmdiary.calendar
+package com.charlie.filmdiary.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.charlie.filmdiary.databinding.FragmentCalendarHubBinding
+import com.charlie.filmdiary.databinding.FragmentSearchHostBinding
+import javax.inject.Inject
 
-class CalendarHubFragment : Fragment() {
+class SearchHostFragment @Inject constructor() : Fragment() {
 
-    private var _binding: FragmentCalendarHubBinding? = null
+    private var _binding: FragmentSearchHostBinding? = null
+
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +19,7 @@ class CalendarHubFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCalendarHubBinding.inflate(inflater, container, false)
+        _binding = FragmentSearchHostBinding.inflate(inflater, container, false)
         return binding.root
     }
 
