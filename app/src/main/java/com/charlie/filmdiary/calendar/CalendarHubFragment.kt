@@ -5,19 +5,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import butterknife.ButterKnife
-import com.charlie.filmdiary.R
+import com.charlie.filmdiary.databinding.FragmentCalendarHubBinding
 
 class CalendarHubFragment : Fragment() {
+
+    private var _binding: FragmentCalendarHubBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_calendar_hub, container, false)
-        ButterKnife.bind(this, view)
-        return view
+        _binding = FragmentCalendarHubBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

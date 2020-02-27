@@ -8,24 +8,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
-import butterknife.BindView
-import butterknife.ButterKnife
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.charlie.filmdiary.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    @BindView(R.id.toolbar)
-    lateinit var toolbar: androidx.appcompat.widget.Toolbar
-
-    @BindView(R.id.bottom_navigation)
-    lateinit var bottomNav: BottomNavigationView
+    private lateinit var binding: ActivityMainBinding
 
     private var currentNavController: LiveData<NavController>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        ButterKnife.bind(this)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         (applicationContext as MyApplication).appComponent.inject(this)
 
         setupToolbar()
@@ -41,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupToolbar() {
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar)
     }
 
     private fun setupBottomNavigationBar() {
@@ -52,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             R.navigation.search_nav_graph
         )
 
-        val controller = bottomNav.setupWithNavController(
+        val controller = binding.bottomNavigation.setupWithNavController(
             navGraphIds = navGraphIds,
             fragmentManager = supportFragmentManager,
             containerId = R.id.nav_host_container,
