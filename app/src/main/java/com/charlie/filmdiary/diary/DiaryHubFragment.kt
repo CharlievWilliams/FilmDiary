@@ -5,12 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.charlie.filmdiary.databinding.FragmentDiaryHostBinding
+import com.charlie.filmdiary.databinding.FragmentDiaryHubBinding
 
-class DiaryHostFragment : Fragment() {
+class DiaryHubFragment : Fragment() {
 
-    private var _binding: FragmentDiaryHostBinding? = null
-
+    private var _binding: FragmentDiaryHubBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,7 +17,7 @@ class DiaryHostFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDiaryHostBinding.inflate(inflater, container, false)
+        _binding = FragmentDiaryHubBinding.inflate(inflater, container, false)
         return binding.root
     }
 

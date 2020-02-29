@@ -6,12 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.charlie.filmdiary.databinding.FragmentSearchBinding
-import javax.inject.Inject
 
-class SearchFragment @Inject constructor() : Fragment() {
+class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
-
     private val binding get() = _binding!!
 
     override fun onCreateView(

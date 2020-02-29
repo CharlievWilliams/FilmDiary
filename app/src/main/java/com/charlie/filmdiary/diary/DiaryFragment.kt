@@ -10,7 +10,6 @@ import com.charlie.filmdiary.databinding.FragmentDiaryBinding
 class DiaryFragment : Fragment() {
 
     private var _binding: FragmentDiaryBinding? = null
-
     private val binding get() = _binding!!
 
     override fun onCreateView(

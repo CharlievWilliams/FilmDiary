@@ -10,7 +10,6 @@ import com.charlie.filmdiary.databinding.FragmentCalendarBinding
 class CalendarFragment : Fragment() {
 
     private var _binding: FragmentCalendarBinding? = null
-
     private val binding get() = _binding!!
 
     override fun onCreateView(

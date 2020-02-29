@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/search"
-    app:startDestination="@id/searchHostFragment">
+    app:startDestination="@id/searchHubFragment">
 
     <fragment
-        android:id="@+id/searchHostFragment"
-        android:name="com.charlie.filmdiary.search.SearchHostFragment"
+        android:id="@+id/searchHubFragment"
+        android:name="com.charlie.filmdiary.search.SearchHubFragment"
         android:label="Search"
-        tools:layout="@layout/fragment_search_host" />
+        tools:layout="@layout/fragment_search_hub" />
 </navigation>
