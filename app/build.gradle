@@ -46,8 +46,8 @@ dependencies {
 
     // Firebase
     implementation 'com.google.firebase:firebase-auth:19.2.0'
-    implementation 'com.google.firebase:firebase-core:17.2.2'
-    implementation 'com.google.firebase:firebase-config:19.1.1'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.google.firebase:firebase-config:19.1.2'
 
     // Testing
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -70,8 +70,8 @@ dependencies {
     implementation 'android.arch.lifecycle:viewmodel:1.1.1'
 
     // Nav Graph
-    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha02"
-    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-alpha02"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha03"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-alpha03"
 
     // API Stuff
     implementation 'com.google.okhttp:okhttp:20120626'
