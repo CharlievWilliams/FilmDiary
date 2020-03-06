@@ -2,9 +2,12 @@
   <dictionary name="cvwbu">
     <words>
       <w>butterknife</w>
+      <w>coroutine</w>
       <w>coroutines</w>
       <w>filmdiary</w>
       <w>firebase</w>
+      <w>imdb</w>
+      <w>tagline</w>
     </words>
   </dictionary>
 </component>
