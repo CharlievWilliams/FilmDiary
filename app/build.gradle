@@ -73,11 +73,5 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha04"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.0-alpha04"
 
-    // API Stuff
-    implementation 'com.google.okhttp:okhttp:20120626'
-    implementation 'com.squareup.moshi:moshi:1.9.2'
-    annotationProcessor 'com.squareup.moshi:moshi-kotlin-codegen:1.9.2'
-    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
-    implementation 'com.squareup.retrofit2:converter-moshi:2.8.1'
-    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+
 }
