@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_background_gradient"
     app:layoutDescription="@xml/motion_scene_splash"
+    tools:keep="@layout/activity_splash"
     tools:showPaths="true">
 
     <ImageView

@@ -1,8 +1,10 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:width="72dp"
     android:height="72dp"
     android:viewportWidth="960"
-    android:viewportHeight="960">
+    android:viewportHeight="960"
+    tools:keep="@drawable/ic_diary">
   <path
       android:pathData="M630,920l-45,-39 -212,-1c-199,0 -214,-1 -233,-20 -19,-19 -20,-33 -20,-380 0,-347 1,-361 20,-380 19,-19 33,-20 300,-20 267,0 281,1 300,20 19,19 20,33 20,200l0,180 43,0c54,0 115,35 138,80 21,39 25,113 8,157 -28,74 -202,243 -250,243 -13,0 -44,-18 -69,-40zM777,788c36,-35 71,-75 79,-90 47,-91 -35,-162 -123,-108 -33,20 -33,20 -65,0 -89,-54 -171,18 -124,108 17,33 139,152 156,152 6,0 41,-28 77,-62z"
       android:fillColor="#000000"

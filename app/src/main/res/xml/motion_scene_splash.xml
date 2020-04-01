@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+<MotionScene xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    tools:keep="@xml/motion_scene_splash">
 
     <Transition
         motion:autoTransition="animateToEnd"
