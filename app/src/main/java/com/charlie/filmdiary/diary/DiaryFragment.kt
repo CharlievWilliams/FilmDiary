@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.charlie.filmdiary.calendar.CalendarViewEvent
 import com.charlie.filmdiary.databinding.FragmentDiaryBinding
 import com.charlie.filmdiary.diary.DiaryViewEvent.*
+import com.charlie.remote.TestClassTemp
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -19,6 +19,9 @@ class DiaryFragment : Fragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var testClassTemp: TestClassTemp
 
     private var _binding: FragmentDiaryBinding? = null
 
@@ -39,6 +42,7 @@ class DiaryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupViewState()
         setupViewEvents()
+        testClassTemp.test()
     }
 
     private fun setupViewState() {

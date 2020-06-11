@@ -7,7 +7,7 @@ import com.charlie.filmdiary.splash.SplashActivity
 import dagger.Component
 
 @Component(
-    modules = [AppModule::class, PresentationModule::class]
+    modules = [AppModule::class, PresentationModule::class, RemoteModule::class]
 )
 interface ApplicationComponent {
     fun inject(activity: SplashActivity)
