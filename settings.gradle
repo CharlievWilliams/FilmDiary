@@ -1,6 +1,2 @@
 include ':app'
 rootProject.name='FilmDiary'
-include ':remote'
-include ':domain'
-include ':persistence'
-include ':repository'
