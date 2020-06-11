@@ -1,4 +1,4 @@
-package com.charlie.filmdiary
+package com.charlie.filmdiary.extensions
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.disposables.Disposable
@@ -10,7 +10,8 @@ interface LifeCycleAwareDisposable {
 
     fun dispose()
 
-    class Default @Inject constructor() : LifeCycleAwareDisposable {
+    class Default @Inject constructor() :
+        LifeCycleAwareDisposable {
 
         private val disposables = CompositeDisposable()
 

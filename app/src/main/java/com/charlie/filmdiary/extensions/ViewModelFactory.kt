@@ -1,4 +1,4 @@
-package com.charlie.filmdiary
+package com.charlie.filmdiary.extensions
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

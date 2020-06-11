@@ -1,5 +1,6 @@
 package com.charlie.filmdiary
 
+import com.charlie.filmdiary.extensions.LifeCycleAwareDisposable
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

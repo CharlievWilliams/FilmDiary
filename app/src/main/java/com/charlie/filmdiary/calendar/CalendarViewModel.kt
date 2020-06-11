@@ -3,14 +3,13 @@ package com.charlie.filmdiary.calendar
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.charlie.filmdiary.LifeCycleAwareDisposable
-import com.charlie.filmdiary.calendar.CalendarViewEvent.*
-import com.charlie.filmdiary.search.SearchViewEvent
+import com.charlie.filmdiary.extensions.LifeCycleAwareDisposable
+import com.charlie.filmdiary.calendar.CalendarViewEvent.ScreenLoadEvent
 import javax.inject.Inject
 
 class CalendarViewModel @Inject constructor(
     private val lifeCycleAwareDisposable: LifeCycleAwareDisposable
-) : ViewModel(), LifeCycleAwareDisposable by lifeCycleAwareDisposable{
+) : ViewModel(), LifeCycleAwareDisposable by lifeCycleAwareDisposable {
 
     private val viewState = MutableLiveData(CalendarViewState(true))
 

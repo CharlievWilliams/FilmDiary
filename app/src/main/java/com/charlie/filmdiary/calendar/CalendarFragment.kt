@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.charlie.filmdiary.calendar.CalendarViewEvent.*
 import com.charlie.filmdiary.databinding.FragmentCalendarBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -46,7 +47,7 @@ class CalendarFragment : Fragment() {
     }
 
     private fun setupViewEvents() {
-        viewModel.onEvent(CalendarViewEvent.ScreenLoadEvent)
+        viewModel.onEvent(ScreenLoadEvent)
     }
 
     override fun onDestroyView() {

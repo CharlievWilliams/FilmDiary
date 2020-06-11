@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.charlie.filmdiary.calendar.CalendarViewEvent
 import com.charlie.filmdiary.databinding.FragmentDiaryBinding
+import com.charlie.filmdiary.diary.DiaryViewEvent.*
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -30,6 +33,22 @@ class DiaryFragment : Fragment() {
     ): View? {
         _binding = FragmentDiaryBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupViewState()
+        setupViewEvents()
+    }
+
+    private fun setupViewState() {
+        viewModel.viewState().observe(viewLifecycleOwner, Observer {
+
+        })
+    }
+
+    private fun setupViewEvents() {
+        viewModel.onEvent(ScreenLoadEvent)
     }
 
     override fun onDestroyView() {
