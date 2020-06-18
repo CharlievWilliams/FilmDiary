@@ -9,19 +9,14 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.charlie.filmdiary.databinding.FragmentDiaryBinding
-import com.charlie.filmdiary.diary.DiaryViewEvent.*
-import com.charlie.remote.TestClassTemp
+import com.charlie.filmdiary.diary.DiaryViewEvent.ScreenLoadEvent
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class DiaryFragment : Fragment() {
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-
-    @Inject
-    lateinit var testClassTemp: TestClassTemp
+class DiaryFragment @Inject constructor(
+    private val viewModelFactory: ViewModelProvider.Factory
+) : Fragment() {
 
     private var _binding: FragmentDiaryBinding? = null
 
@@ -42,7 +37,6 @@ class DiaryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupViewState()
         setupViewEvents()
-        testClassTemp.test()
     }
 
     private fun setupViewState() {

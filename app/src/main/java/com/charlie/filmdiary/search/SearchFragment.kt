@@ -8,17 +8,15 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.charlie.filmdiary.calendar.CalendarViewEvent
 import com.charlie.filmdiary.databinding.FragmentSearchBinding
-import com.charlie.filmdiary.search.SearchViewEvent.*
+import com.charlie.filmdiary.search.SearchViewEvent.ScreenLoadEvent
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class SearchFragment : Fragment() {
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
+class SearchFragment @Inject constructor(
+    private val viewModelFactory: ViewModelProvider.Factory
+) : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
 

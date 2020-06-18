@@ -8,16 +8,15 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.charlie.filmdiary.calendar.CalendarViewEvent.*
+import com.charlie.filmdiary.calendar.CalendarViewEvent.ScreenLoadEvent
 import com.charlie.filmdiary.databinding.FragmentCalendarBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class CalendarFragment : Fragment() {
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
+class CalendarFragment @Inject constructor(
+    private val viewModelFactory: ViewModelProvider.Factory
+) : Fragment() {
 
     private var _binding: FragmentCalendarBinding? = null
 

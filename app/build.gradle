@@ -53,17 +53,23 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.3.1'
     implementation 'com.google.firebase:firebase-core:17.4.3'
     implementation 'com.google.firebase:firebase-config:19.1.4'
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
 
     // Testing
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    // Dagger
+    // Dagger & Hilt
     implementation 'com.google.dagger:dagger:2.28'
     kapt 'com.google.dagger:dagger-compiler:2.28'
     implementation "com.google.dagger:hilt-android:2.28-alpha"
     kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+
+    // Assisted Inject
+    compileOnly 'com.squareup.inject:assisted-inject-annotations-dagger2:0.5.0'
+    kapt 'com.squareup.inject:assisted-inject-processor-dagger2:0.5.0'
 
     // RxJava
     implementation "io.reactivex.rxjava3:rxjava:3.0.0"
@@ -73,7 +79,13 @@ dependencies {
     implementation 'android.arch.lifecycle:viewmodel:1.1.1'
 
     // Nav Graph
-    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-beta01"
-    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-beta01"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-rc01"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-rc01"
 
+    // Room
+    implementation "androidx.room:room-runtime:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+    implementation "androidx.room:room-ktx:2.2.5"
+    implementation "androidx.room:room-rxjava2:2.2.5"
+    testImplementation "androidx.room:room-testing:2.2.5"
 }

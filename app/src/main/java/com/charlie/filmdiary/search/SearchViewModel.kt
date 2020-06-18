@@ -11,7 +11,7 @@ class SearchViewModel @Inject constructor(
     private val lifeCycleAwareDisposable: LifeCycleAwareDisposable
 ) : ViewModel(), LifeCycleAwareDisposable by lifeCycleAwareDisposable {
 
-    private val viewState = MutableLiveData(SearchViewState(true))
+    private val viewState: MutableLiveData<SearchViewState> = MutableLiveData()
 
     fun onEvent(event: SearchViewEvent) {
         when (event) {
@@ -21,6 +21,12 @@ class SearchViewModel @Inject constructor(
 
     private fun onScreenLoad() {
         // Perform use case with onSuccess / onError
+    }
+
+    private fun onScreenLoadSuccess() {
+        viewState.value = SearchViewState(
+            isLoading = false
+        )
     }
 
     fun viewState(): LiveData<SearchViewState> = viewState
